@@ -1,0 +1,196 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #f4f7fa;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #2c3e50;
+  padding: 10px 20px;
+  position: relative;
+}
+
+.navbar .logo {
+  color: white;
+  font-weight: bold;
+  font-size: 1.5em;
+}
+
+.navbar .hamburger {
+  display: none;
+  font-size: 1.8em;
+  color: white;
+  cursor: pointer;
+}
+
+.navbar .nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.navbar .nav-links li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 5px 10px;
+  transition: 0.3s;
+}
+
+.navbar .nav-links li a:hover {
+  color: #1abc9c;
+}
+
+/* Mobile Responsive */
+@media  {
+  .navbar .hamburger {
+    display: block;
+  }
+
+  .navbar .nav-links {
+    display: none; /* hide initially */
+    flex-direction: column;
+    width: 100%;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    background: #2c3e50;
+    padding: 10px 0;
+  }
+
+  .navbar .nav-links li {
+    text-align: center;
+    padding: 10px 0;
+  }
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.navbar a:hover,
+.navbar a.active {
+  color: #1abc9c;
+}
+
+/* Hero Section */
+.hero {
+  text-align: center;
+  padding: 60px 20px;
+  background: linear-gradient(135deg, #1abc9c, #3498db);
+  color: white;
+}
+
+.hero h1 {
+  font-size: 2.5em;
+  margin-bottom: 15px;
+}
+
+.hero p {
+  font-size: 1.2em;
+}
+
+/* Menu Cards (Home Page) */
+.menu {
+  max-width: 900px;
+  margin: 40px auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 25px;
+  padding: 0 20px;
+}
+
+.card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 150px;
+  background: white;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  text-decoration: none;
+  color: #333;
+  font-size: 1.3em;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+.card:hover {
+  transform: scale(1.08);
+  background: #ecf0f1;
+  color: #2c3e50;
+  box-shadow: 0 6px 12px rgba(0,0,0,0.2);
+}
+
+/* Content Area (Bio, Study, Career, Article) */
+.content {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 0 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+/* Bio Boxes / Content Boxes */
+.bio-box {
+  background: white;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  transition: all 0.3s ease;
+}
+
+.bio-box:hover {
+  transform: scale(1.02);
+  box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+}
+
+/* Back Button */
+.back-btn {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 20px;
+  background: #2c3e50;
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+.back-btn:hover {
+  background: #1abc9c;
+  color: white;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #2c3e50;
+  color: white;
+  margin-top: 40px;
+  font-size: 0.9em;
+}
+
